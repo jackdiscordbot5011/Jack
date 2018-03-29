@@ -7,10 +7,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.channel.send({embed: {
-  color: 3447003,
-  description: "A very simple Embed!"
-}});
+    	message.channel.send('pong');
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
