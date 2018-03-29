@@ -6,10 +6,16 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
-});
+    if (message.content === 'config.reboot') {
+    	message.channel.send({embed: {
+    color: 3447003,
+    title: "Initial setup",
+    description: "Initializing sequence..",
+    footer: 
+    {
+        text: "Footnote ©"
+    }
 
-// THIS  MUST  BE  THIS  WAY
+});
+    
 client.login(process.env.BOT_TOKEN);
