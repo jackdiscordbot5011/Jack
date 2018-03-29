@@ -7,7 +7,10 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '%clientconfiguremsg1') {
-    	message.channel.send('React with each of the platforms you play on by clicking on the corresponding platform icon below.');
+    	message.channel.send({embed:{
+            title:"Platform Role Assignment"
+            description:"React with each of the platforms you play on by clicking on the corresponding platform icon below."
+        }})
   	}
 });
 
