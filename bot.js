@@ -50,7 +50,7 @@ client.on('message', message => {
     	message.channel.send({embed:{
             title:"ATTENTION",
             description:"**If you've just joined the server, you will have to wait** __**10 minutes**__ **before you can react.**",
-            color: 0xFFF7F7
+            color: 0xFF3939
         }})
   	}
 });
