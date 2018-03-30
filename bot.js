@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '%clientconfiguremsg1') {
+    if (message.content === 'wm1') {
     	message.channel.send({embed:{
             title:"Platform Role Assignment",
             description:"React with each of the platforms you play on by clicking on the corresponding platform icon below.",
@@ -16,7 +16,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '%clientconfiguremsg2') {
+    if (message.content === 'wm2') {
     	message.channel.send({embed:{
             title:"Game-Specific Roles",
             description:"React with one or more of the following icons to assign game-based roles.",
@@ -26,7 +26,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '%clientconfiguremsg3') {
+    if (message.content === 'wm3') {
     	message.channel.send({embed:{
             title:"Server Announcements",
             description:"React to the following message to receive server news.",
@@ -36,7 +36,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '%clientconfiguremsg4') {
+    if (message.content === 'wm4') {
     	message.channel.send({embed:{
             title:"/r/Gaming Announcements",
             description:"React to the following message to receive news related to r/gaming.",
