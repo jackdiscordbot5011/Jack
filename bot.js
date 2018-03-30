@@ -8,8 +8,8 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'wm1') {
     	message.channel.send({embed:{
-            title:"Platform Role Assignment",
-            description:"React with each of the platforms you play on by clicking on the corresponding platform icon below.",
+            title:"Device Role Assignment",
+            description:"React with each of the devices you have by clicking on the corresponding device icon below.",
             color: 0xFFF7F7
         }})
   	}
@@ -18,8 +18,8 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'wm2') {
     	message.channel.send({embed:{
-            title:"Game-Specific Roles",
-            description:"React with one or more of the following icons to assign game-based roles.",
+            title:"Device Color",
+            description:"React with one or more of the following icons to assign device color roles.",
             color: 0xFFF7F7
         }})
   	}
@@ -28,8 +28,8 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'wm3') {
     	message.channel.send({embed:{
-            title:"Server Announcements",
-            description:"React to the following message to receive server news.",
+            title:"Capacity Roles",
+            description:"React with one or more of the following icons to assign device capacity roles.",
             color: 0xFFF7F7
         }})
   	}
@@ -38,8 +38,8 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'wm4') {
     	message.channel.send({embed:{
-            title:"/r/Gaming Announcements",
-            description:"React to the following message to receive news related to r/gaming.",
+            title:"Server News",
+            description:"React to the following message to receive news related to this Discord server.",
             color: 0xFFF7F7
         }})
   	}
