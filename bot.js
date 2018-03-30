@@ -45,6 +45,16 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'wm5') {
+    	message.channel.send({embed:{
+            title:"ATTENTION",
+            description:"**If you've just joined the server, you will have to wait** __**10 minutes**__ **before you can react.**",
+            color: 0xFFF7F7
+        }})
+  	}
+});
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
