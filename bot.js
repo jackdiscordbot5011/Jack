@@ -56,10 +56,11 @@ client.on('message', message => {
   	}
 });
 
+var prefix = "!"
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'help')) {
-		message.channel.sendMessage('Currently in development.');
+		message.channel.sendMessage('111');
 	}
 });
 
