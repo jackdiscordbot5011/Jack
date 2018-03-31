@@ -1,6 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
+bot.on('ready', function() {
+    bot.user.setUsername("AppleCare");
+}
 
 client.on('ready', () => {
     console.log('I am ready!');
