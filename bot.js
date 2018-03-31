@@ -62,7 +62,7 @@ client.on('message', message => {
 	if (message.content.startsWith(prefix + 'help')) {
 		message.channel.sendMessage({embed:{
             title:"Need help?",
-            description:"Go to #help-and-support and leave your request along with a ping to @Support Team.",
+            description:"Go to #help-and-support and leave a message containing your issue/request and ping **@Support Team**",
             color: 0x8c98ff
         }})
   	}
