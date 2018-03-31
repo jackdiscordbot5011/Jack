@@ -63,7 +63,7 @@ client.on('message', message => {
 		message.channel.sendMessage({embed:{
             title:"Need help?",
             description:"Go to #help-and-support and leave your request along with a ping to @Support Team.",
-            color: 0xFFF7F7
+            color: 0x8c98ff
         }})
   	}
 });
