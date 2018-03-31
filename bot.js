@@ -56,6 +56,13 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'help')) {
+		message.channel.sendMessage('Currently in development.');
+	}
+});
+
 client.on("message", async message => {
   // This event will run on every single message received, from any channel or DM.
   
