@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
-bot.on('ready', function() {
+client.on('ready', function() {
     bot.user.setUsername("AppleCare");
 });
 
