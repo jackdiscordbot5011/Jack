@@ -56,6 +56,16 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'help') {
+    	message.channel.send({embed:{
+            title:"Need help?",
+            description:"Go to **#help-and-support** and leave a message containing your issue/request and ping **@Support Team**",
+            color: 0x8c98ff
+        }})
+  	}
+});
+
 var prefix = "!"
 client.on('message', message => {
 	if (message.author === client.user) return;
