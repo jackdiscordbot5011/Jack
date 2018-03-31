@@ -60,8 +60,12 @@ var prefix = "!"
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'help')) {
-		message.channel.sendMessage('111');
-	}
+		message.channel.sendMessage({embed:{
+            title:"Need help?",
+            description:"Go to #help-and-support and leave your request along with a ping to @Support Team.",
+            color: 0xFFF7F7
+        }})
+  	}
 });
 
 client.on("message", async message => {
