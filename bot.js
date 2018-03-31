@@ -138,7 +138,7 @@ client.on("message", async message => {
     // Now, time for a swift kick in the nuts!
     await member.kick(reason)
       .catch(error => message.reply(`Sorry ${message.author} I couldn't kick because of : ${error}`));
-    message.channel.send(`${member.user.tag} has been kicked by ${message.author.tag} because: ${reason}`);
+    message.channel.send(`:ok_hand: kicked ${member.user.tag} (`${reason}``);
 
   }
   
