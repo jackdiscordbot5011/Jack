@@ -57,7 +57,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.contain === 'help') {
     	message.channel.send({embed:{
             title:"Need help?",
             description:"Go to **#help-and-support** and leave a message containing your issue/request and ping **@Support Team**",
