@@ -104,9 +104,9 @@ client.on("message", async message => {
     // message.mentions.members is a collection of people that have been mentioned, as GuildMembers.
     let member = message.mentions.members.first();
     if(!member)
-      return message.reply("Please mention a valid member of this server");
+      return message.channel.send("Please mention a user.");
     if(!member.kickable) 
-      return message.channel.send("I cannot kick this user! Do they have a higher role? Do I have kick permissions?");
+      return message.channel.send("Unable to kick user. Check role hierarchy.");
     
     // slice(1) removes the first part, which here should be the user mention!
     let reason = args.slice(1).join(' ');
@@ -124,17 +124,17 @@ client.on("message", async message => {
     // Most of this command is identical to kick, except that here we'll only let admins do it.
     // In the real world mods could ban too, but this is just an example, right? ;)
     if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
-      return message.reply("Sorry, you don't have permissions to use this!");
+      return message.reply("Permission denied.");
     
     let member = message.mentions.members.first();
     if(!member)
-      return message.reply("Please mention a valid member of this server");
+      return message.reply("Please mention a user.");
     if(!member.bannable) 
-      return message.reply("I cannot ban this user! Do they have a higher role? Do I have ban permissions?");
+      return message.reply("Unable to ban user. Check role hierarchy.");
 
     let reason = args.slice(1).join(' ');
     if(!reason)
-      return message.reply("Please indicate a reason for the ban!");
+      return message.reply("Invalid reason.");
     
     await member.ban(reason)
       .catch(error => message.reply(`Sorry ${message.author} I couldn't ban because of : ${error}`));
