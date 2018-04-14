@@ -17,46 +17,6 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'wm2') {
-    	message.channel.send({embed:{
-            title:"Device Color",
-            description:"React with one or more of the following icons to assign device color roles.",
-            color: 0xFFF7F7
-        }})
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'wm3') {
-    	message.channel.send({embed:{
-            title:"Capacity Roles",
-            description:"React with one or more of the following icons to assign device capacity roles.",
-            color: 0xFFF7F7
-        }})
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'wm4') {
-    	message.channel.send({embed:{
-            title:"Server News",
-            description:"React to the following message to receive news related to this Discord server.",
-            color: 0xFFF7F7
-        }})
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'wm5') {
-    	message.channel.send({embed:{
-            title:"ATTENTION",
-            description:"**If you've just joined the server, you will have to wait** __**10 minutes**__ **before you can react.**",
-            color: 0xFF3939
-        }})
-  	}
-});
-
-client.on('message', message => {
     if (message.content === 'disabled176') {
     	message.channel.send({embed:{
             title:"Need help?",
