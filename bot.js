@@ -22,16 +22,5 @@ client.on('message', message => {
       }
 });
 
-client.on('message', message => {
-    if (message.content === 'disabled176') {
-    	message.channel.send({embed:{
-            title:"Need help?",
-            description:"Go to **#help-and-support** and leave a message containing your issue/request and ping **@Support Team**",
-            color: 0x8c98ff
-        }})
-  	}
-});
-
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
