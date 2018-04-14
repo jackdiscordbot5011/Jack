@@ -17,7 +17,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '%devannouncement') {
-        message.reply('@Announcement The **iOS 11.4 Developer & Public Beta 1** are now available. Here is a guide on how to get them: https://developer.apple.com/support/beta-software/install-ios-beta/');
+        message.channel.send('@Announcement The **iOS 11.4 Developer & Public Beta 1** are now available. Here is a guide on how to get them: https://developer.apple.com/support/beta-software/install-ios-beta/');
       }
 });
 
