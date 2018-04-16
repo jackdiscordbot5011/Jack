@@ -58,24 +58,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'disabled1') {
-    	message.channel.send({embed:{
-            title:"Need help?",
-            description:"Go to **#help-and-support** and leave a message containing your issue/request and ping **@Support Team**",
-            color: 0x8c98ff
-        }})
-  	}
-});
-
-var prefix = "!"
-client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'disabled1')) {
-		message.channel.sendMessage({embed:{
-            title:"Need help?",
-            description:"Go to **#help-and-support** and leave a message containing your issue/request and ping **@Support Team**",
-            color: 0x8c98ff
-        }})
+    if (message.content === '%devannouncement') {
+    	message.reply('<@&428010525410983937> The **iOS 11.4 Developer Beta 2** is now available. Check out https://developer.apple.com/support/beta-software/install-ios-beta/ for more info on how to get started.');
   	}
 });
 
