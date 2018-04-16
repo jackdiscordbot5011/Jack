@@ -3,4 +3,4 @@ const bot = new Discord.Client();
 bot.on('ready', function() {
     bot.user.setUsername("MyNewUsername");
 }
-bot.login("token");
+client.login(process.env.BOT_TOKEN);
