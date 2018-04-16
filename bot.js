@@ -46,6 +46,7 @@ client.on('message', message => {
   	}
 });
 
+
 client.on('message', message => {
     if (message.content === 'wm5') {
     	message.channel.send({embed:{
@@ -57,7 +58,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content === 'disabled1') {
     	message.channel.send({embed:{
             title:"Need help?",
             description:"Go to **#help-and-support** and leave a message containing your issue/request and ping **@Support Team**",
@@ -69,7 +70,7 @@ client.on('message', message => {
 var prefix = "!"
 client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'help')) {
+	if (message.content.startsWith(prefix + 'disabled1')) {
 		message.channel.sendMessage({embed:{
             title:"Need help?",
             description:"Go to **#help-and-support** and leave a message containing your issue/request and ping **@Support Team**",
