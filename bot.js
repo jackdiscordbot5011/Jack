@@ -59,7 +59,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '%devannouncement') {
-    	message.channel.send('<@&428010525410983937> The **iOS 11.4 Developer Beta 2** is now available. Check out https://developer.apple.com/support/beta-software/install-ios-beta/ for more info on how to get started.');
+    	message.channel.send('<@&428010525410983937> The **iOS 11.4 Developer Beta 3** is now available. Check out https://developer.apple.com/support/beta-software/install-ios-beta/ for more info on how to get started.');
   	}
 });
 
